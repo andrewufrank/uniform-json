@@ -18,7 +18,8 @@
 
 module Uniform.Yaml
   ( module Uniform.Yaml,
-    module Uniform.Error, -- or at least ErrIO
+    -- module Uniform.Error, -- or at least 
+    ErrIO,
     -- , Y.decodeEither'
     Y.ParseException (..),
     -- , module Data.Yaml
@@ -33,10 +34,12 @@ where
 -- import Uniform.FileIO (read8, Extension(..))
 
 import qualified Data.Yaml as Y
-import Uniform.Error
-import Uniform.FileIO
+import UniformBase
+-- import Uniform.Error
+-- import Unifor.Strings
+-- import Uniform.FileIO
 import Uniform.Json
-import Uniform.TypedFile (TypedFile5 (..), TypedFiles7 (..))
+-- import Uniform.TypedFile (TypedFile5 (..), TypedFiles7 (..))
 
 decodeThrowT :: Text -> ErrIO Value
 decodeThrowT = Y.decodeThrow . t2b

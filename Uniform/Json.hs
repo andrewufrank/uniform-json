@@ -17,7 +17,8 @@
 -- | the operations on JSON data types
 module Uniform.Json
   ( module Uniform.Json,
-    module Uniform.Error, -- or at least ErrIO
+    -- module Uniform.Error, -- or at least 
+    ErrIO,
     Value (..),
     ToJSON (..),
     FromJSON (..),
@@ -51,8 +52,9 @@ import Data.Aeson as Aeson
 import Data.Aeson.Encode.Pretty (encodePretty)
 import Data.Aeson.Lens
 import qualified Data.HashMap.Lazy as HML
-import Uniform.Error hiding (at)
-import Uniform.Strings hiding (at)
+import UniformBase
+-- import Uniform.Error hiding (at)
+-- import Uniform.Strings hiding (at)
 
 encodeT :: ToJSON a => a -> Text
 encodeT = bb2t . bl2b . encode

@@ -40,10 +40,11 @@ dependencies:
 # - network-uri
 # - test-invariant
 # - numeric-prelude
-- uniform-algebras
-- uniform-strings
-- uniform-error
-- uniform-fileio
+- uniformBase
+# - uniform-algebras
+# - uniform-strings
+# - uniform-error
+# - uniform-fileio
 #         , monads-tf
 #         -- , safe
 #         , uniform-strings

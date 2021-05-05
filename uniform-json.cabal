@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: bca5cda43f656afaaf0f8f98b48130380fdac6a97fe12c2e98ed2a8bf83dab9c
+-- hash: 395e3780bb46159041498fc9c38d2f0da4c21d9aaa9e967490de166d03aedeb8
 
 name:           uniform-json
 version:        0.0.2
@@ -37,10 +37,7 @@ library
     , lens-aeson
     , monads-tf
     , pretty-show
-    , uniform-algebras
-    , uniform-error
-    , uniform-fileio
-    , uniform-strings
+    , uniformBase
     , unordered-containers
     , yaml
   default-language: Haskell2010
@@ -68,11 +65,10 @@ test-suite strings-test
     , quickcheck-text
     , time
     , uniform-algebras
-    , uniform-error
-    , uniform-fileio
     , uniform-json
     , uniform-strings
     , uniform-time
+    , uniformBase
     , unordered-containers
     , yaml
   default-language: Haskell2010
