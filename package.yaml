@@ -2,17 +2,17 @@ name:         uniform-json
 version:      0.0.2
 license:      GPL
 license-file: GPL_3
-maintainer:   Andrew U. Frank <andrewufrank@gmail.com>
+maintainer:   Andrew U. Frank <frank@geoinfo.tuwien.ac.at>
 author:       Andrew Frank
 copyright:    2021 Andrew U. Frank
-category:     Data Text 
-synopsis: handling of JSON and YAML in an uniform way and some pandoc stuff 
+category:     Data Text JSON YAML Pandoc
+synopsis: handling of JSON and YAML in an uniform way
 description: |
-    remove particular aspects of abstraction in json and yaml
+    remove particular aspects of abstraction in json and yaml - with an eye to use it with pandoc
 
-    # source-repository head
-    # type: git
-    # github: https://github.com/andrewufrank/uniform-json.git
+# source-repository: head
+# type: git
+# github: https://github.com/andrewufrank/uniform-json.git
  
 
 
@@ -71,7 +71,10 @@ dependencies:
 library:
   source-dirs: 
   - .
-  
+  verbatim:
+    autogen-modules:
+        Paths_uniform_json
+
 # this is only a library, no directly executable
 # executables:
 #   primo-exe:
