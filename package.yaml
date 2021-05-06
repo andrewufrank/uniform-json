@@ -92,7 +92,7 @@ tests:
   strings-test:
     main:                Testing.hs
     # there is a second main test file TestingJson.hs
-    source-dirs:         test
+    source-dirs:         tests
     ghc-options:
     - -threaded
     - -rtsopts
